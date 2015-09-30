@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DemoTableViewCell.h
 //  AutoLayoutDynamicTypeDemo
 //
 //  Created by Matt Glover on 24/09/2015.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface DemoTableViewCell : UITableViewCell
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UILabel *nameLabel;
 
 @end
-

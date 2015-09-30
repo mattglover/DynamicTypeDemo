@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27122031BB46790009B1BB7 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B27122011BB46790009B1BB7 /* DemoTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		B2EC84DE1BB4653800FAC70F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EC84DD1BB4653800FAC70F /* main.m */; };
 		B2EC84E11BB4653800FAC70F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EC84E01BB4653800FAC70F /* AppDelegate.m */; };
 		B2EC84E41BB4653800FAC70F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EC84E31BB4653800FAC70F /* ViewController.m */; };
@@ -35,10 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B27122001BB46790009B1BB7 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		B27122011BB46790009B1BB7 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
 		B2EC84D91BB4653800FAC70F /* AutoLayoutDynamicTypeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDynamicTypeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EC84DD1BB4653800FAC70F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B2EC84DF1BB4653800FAC70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B2EC84E01BB4653800FAC70F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B2EC84DF1BB4653800FAC70F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AutoLayoutDynamicTypeDemo/AppDelegate/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		B2EC84E01BB4653800FAC70F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AutoLayoutDynamicTypeDemo/AppDelegate/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		B2EC84E21BB4653800FAC70F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B2EC84E31BB4653800FAC70F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B2EC84E61BB4653800FAC70F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B27121FF1BB4677B009B1BB7 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B27122001BB46790009B1BB7 /* DemoTableViewCell.h */,
+				B27122011BB46790009B1BB7 /* DemoTableViewCell.m */,
+			);
+			name = UITableViewCells;
+			path = ViewControllers/UITableViewCells;
+			sourceTree = "<group>";
+		};
 		B2EC84D01BB4653800FAC70F = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +114,9 @@
 		B2EC84DB1BB4653800FAC70F /* AutoLayoutDynamicTypeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B2EC84DF1BB4653800FAC70F /* AppDelegate.h */,
-				B2EC84E01BB4653800FAC70F /* AppDelegate.m */,
-				B2EC84E21BB4653800FAC70F /* ViewController.h */,
-				B2EC84E31BB4653800FAC70F /* ViewController.m */,
-				B2EC84E51BB4653800FAC70F /* Main.storyboard */,
-				B2EC84E81BB4653800FAC70F /* Assets.xcassets */,
-				B2EC84EA1BB4653800FAC70F /* LaunchScreen.storyboard */,
-				B2EC84ED1BB4653800FAC70F /* Info.plist */,
+				B2EC850F1BB4655000FAC70F /* AppDelegate */,
+				B2EC85101BB4655A00FAC70F /* ViewControllers */,
+				B27121FF1BB4677B009B1BB7 /* UITableViewCells */,
 				B2EC84DC1BB4653800FAC70F /* Supporting Files */,
 			);
 			path = AutoLayoutDynamicTypeDemo;
@@ -117,6 +125,10 @@
 		B2EC84DC1BB4653800FAC70F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B2EC84E51BB4653800FAC70F /* Main.storyboard */,
+				B2EC84E81BB4653800FAC70F /* Assets.xcassets */,
+				B2EC84EA1BB4653800FAC70F /* LaunchScreen.storyboard */,
+				B2EC84ED1BB4653800FAC70F /* Info.plist */,
 				B2EC84DD1BB4653800FAC70F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +150,24 @@
 				B2EC85031BB4653800FAC70F /* Info.plist */,
 			);
 			path = AutoLayoutDynamicTypeDemoUITests;
+			sourceTree = "<group>";
+		};
+		B2EC850F1BB4655000FAC70F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC84DF1BB4653800FAC70F /* AppDelegate.h */,
+				B2EC84E01BB4653800FAC70F /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B2EC85101BB4655A00FAC70F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2EC84E21BB4653800FAC70F /* ViewController.h */,
+				B2EC84E31BB4653800FAC70F /* ViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +237,7 @@
 				TargetAttributes = {
 					B2EC84D81BB4653800FAC70F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = XR88US5DG4;
 					};
 					B2EC84F11BB4653800FAC70F = {
 						CreatedOnToolsVersion = 7.0;
@@ -272,6 +303,7 @@
 			files = (
 				B2EC84E41BB4653800FAC70F /* ViewController.m in Sources */,
 				B2EC84E11BB4653800FAC70F /* AppDelegate.m in Sources */,
+				B27122031BB46790009B1BB7 /* DemoTableViewCell.m in Sources */,
 				B2EC84DE1BB4653800FAC70F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +445,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AutoLayoutDynamicTypeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.AutoLayoutDynamicTypeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +459,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AutoLayoutDynamicTypeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.duchysoftware.AutoLayoutDynamicTypeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +536,7 @@
 				B2EC85081BB4653800FAC70F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2EC85091BB4653800FAC70F /* Build configuration list for PBXNativeTarget "AutoLayoutDynamicTypeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +545,7 @@
 				B2EC850B1BB4653800FAC70F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B2EC850C1BB4653800FAC70F /* Build configuration list for PBXNativeTarget "AutoLayoutDynamicTypeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +554,7 @@
 				B2EC850E1BB4653800FAC70F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
